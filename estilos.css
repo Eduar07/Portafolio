@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --color-blanco: #FFFFFF;
+    --color-negro: #000000;
+    --color-gris-claro: #F2F2F2;
+    --color-gris: #BDBDBD;
+    --color-gris-oscuro: #4F4F4F;
+  }
+body{
+     font-family: "Chewy", system-ui;
+     background-color: black;
+}
+header{
+
+    width: 100%;
+    height: 300px;
+}
+.hove {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    grid-auto-rows: 1fr;            
+    gap: 20px;
+    margin-right: 120px;
+  }
+  
+
+.hove img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+    align-self: center;
+    margin: auto;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+    filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.7));
+}
+
+.ubicacion{
+  display: grid;  
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+  color: var(--color-blanco);
+  background-color: rgb(48, 46, 46);
+  margin: auto;
+  border-radius: 15px;
+  padding: 20px;
+  
+}
+
+.texto{
+    color: var(--color-blanco);
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(48, 46, 46);
+    border-radius: 15px;
+    align-content: center;
+}
+.title{
+    border-right: 2px solid var(--color-negro); 
+}
+.bi-controller{
+    background-color: var(--color-negro);
+    padding: 7px;
+    border-radius: 15px;
+    color: var(--color-gris);
+   
+}
+.bi-camera-reels-fill{
+    background-color: var(--color-negro);
+    padding: 7px;
+    border-radius: 15px;
+    color: var(--color-gris);
+   
+}
+.bi-luggage-fill{
+    background-color: var(--color-negro);
+    padding: 7px;
+    border-radius: 15px;
+    color: var(--color-gris);
+}
